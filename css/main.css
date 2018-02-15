@@ -13,3 +13,44 @@
 html {
   font-family: var(--font-primary);
 }
+
+a {
+  text-decoration: none;
+}
+
+.top-bar {
+  background-color: var(--color-dark-grey);
+  position: fixed;
+  width: 100%;
+}
+
+.nav-bar {
+  background-color: var(--color-dark-grey);
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.logo-text {
+  color: var(--color-white);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-bar svg,
+.nav-bar a {
+  color: var(--color-white);
+  fill: var(--color-white);
+}
+
+.nav-bar a:hover svg,
+.nav-bar a:hover {
+  color: var(--color-dark-primary);
+  fill: var(--color-dark-primary);
+}
+
+.current,
+.current svg {
+  color: var(--color-dark-primary) !important;
+  fill: var(--color-dark-primary) !important;
+}
