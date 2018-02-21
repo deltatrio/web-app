@@ -109,17 +109,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
   <script>
     $('.thumbs-up').click(function() {
-      $('.thumbs-up').addClass("active");
+      $('.thumbs-up').toggleClass("active");
       $('.thumbs-down').removeClass("active");
     });
-  </script>
 
-  <script>
     $('.thumbs-down').click(function() {
-      $('.thumbs-down').addClass("active");
+      $('.thumbs-down').toggleClass("active");
       $('.thumbs-up').removeClass("active");
     });
   </script>
-
 </body>
 </html>

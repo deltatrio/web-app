@@ -10,6 +10,7 @@
 }
 
 html {
+  background-color: var(--color-dark-grey);
   font-family: var(--font-primary);
 }
 
@@ -20,13 +21,13 @@ a {
 /* For page navigations (top navigation) */
 
 .top-bar {
-  background-color: var(--color-dark-grey);
+  background-color: var(--color-black);
   width: 100%;
   z-index: 1000;
 }
 
 .nav-bar {
-  background-color: var(--color-dark-grey);
+  background-color: var(--color-black);
   bottom: 0;
   position: fixed;
   width: 100%;
@@ -69,6 +70,7 @@ a {
 
 .banner-img {
   background: linear-gradient(rgba(20,20,20, .50), rgba(20,20,20, .75));
+  border-bottom: solid var(--color-light-primary) 1rem;
 }
 
 .banner-likes {
@@ -76,6 +78,7 @@ a {
 }
 
 .banner-likes svg {
+  cursor: pointer;
   fill: var(--color-white);
 }
 
@@ -90,6 +93,28 @@ a {
 
 .active svg {
   fill: var(--color-dark-primary);
+}
+
+/* For the beer page content */
+
+.tag {
+  background-color: var(--color-light-primary);
+  border-radius: 5px;
+}
+
+.info-icons svg {
+  fill: var(--color-white);
+}
+
+.info-icons {
+  color: var(--color-white);
+}
+
+.taste,
+.percent,
+.barley,
+.hops {
+  margin-right: 3rem;
 }
 
 @keyframes swing {
