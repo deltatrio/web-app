@@ -18,6 +18,28 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.btn-ghost {
+  border-style: solid;
+  background-size: 200% 200%;
+  background-image: linear-gradient(to top, #ff8f00 25%, #ffe082 25%, #ffe082 50%, #fff 50% );
+  border-color: var(--color-dark-primary);
+  color: var(--color-dark-primary);
+  transition: all 0.25s ease-in;
+}
+
+.btn-ghost:hover {
+  border-color: var(--color-dark-primary);
+  background-color: var(--color-white);
+  background-image: linear-gradient(to top, #ff8f00 25%, #ffe082 25%, #ffe082 50%, #fff 50% );
+  background-position: 0 100%;
+  color: var(--color-white);
+}
+
 /* For page navigations (top navigation) */
 
 .top-bar {
@@ -100,6 +122,10 @@ a {
 .tag {
   background-color: var(--color-light-primary);
   border-radius: 5px;
+}
+
+.bio {
+  color: var(--color-white);
 }
 
 .info-icons svg {
