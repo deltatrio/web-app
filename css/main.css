@@ -9,8 +9,8 @@
   --font-primary: 'Raleway', sans-serif;
 }
 
-
 html {
+  background-color: var(--color-dark-grey);
   font-family: var(--font-primary);
 }
 
@@ -18,17 +18,46 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.btn-ghost {
+  border-style: solid;
+  background-size: 200% 200%;
+  background-image: linear-gradient(to top, #ff8f00 25%, #ffe082 25%, #ffe082 50%, #fff 50% );
+  border-color: var(--color-dark-primary);
+  color: var(--color-dark-primary);
+  transition: all 0.25s ease-in;
+}
+
+.btn-ghost:hover {
+  border-color: var(--color-dark-primary);
+  background-color: var(--color-white);
+  background-image: linear-gradient(to top, #ff8f00 25%, #ffe082 25%, #ffe082 50%, #fff 50% );
+  background-position: 0 100%;
+  color: var(--color-white);
+}
+
+/* For page navigations (top navigation) */
+
 .top-bar {
-  background-color: var(--color-dark-grey);
+  background-color: var(--color-black);
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-bar {
+  background-color: var(--color-black);
+  bottom: 0;
   position: fixed;
   width: 100%;
 }
 
-.nav-bar {
-  background-color: var(--color-dark-grey);
-  bottom: 0;
-  position: fixed;
-  width: 100%;
+.logo:hover svg path#moustache {
+  animation: swing 800ms ease-in-out forwards infinite;
+  transform-origin: 50% 75%;
 }
 
 .logo-text {
@@ -36,6 +65,8 @@ a {
   text-decoration: none;
   text-transform: uppercase;
 }
+
+/* For page navigations (bottom navigation) */
 
 .nav-bar svg,
 .nav-bar a {
@@ -53,4 +84,77 @@ a {
 .current svg {
   color: var(--color-dark-primary) !important;
   fill: var(--color-dark-primary) !important;
+}
+
+/* For page navigations (buttons) */
+
+/* For the beer page banner */
+
+.banner-img {
+  background: linear-gradient(rgba(20,20,20, .50), rgba(20,20,20, .75));
+  border-bottom: solid var(--color-light-primary) 1rem;
+}
+
+.banner-likes {
+  color: var(--color-white);
+}
+
+.banner-likes svg {
+  cursor: pointer;
+  fill: var(--color-white);
+}
+
+.banner-class {
+  color: var(--color-white);
+}
+
+.banner-heading {
+  color: var(--color-light-primary);
+  text-transform: uppercase;
+}
+
+.active svg {
+  fill: var(--color-dark-primary);
+}
+
+/* For the beer page content */
+
+.tag {
+  background-color: var(--color-light-primary);
+  border-radius: 5px;
+}
+
+.bio {
+  color: var(--color-white);
+}
+
+.info-icons svg {
+  fill: var(--color-white);
+}
+
+.info-icons {
+  color: var(--color-white);
+}
+
+.taste,
+.percent,
+.barley,
+.hops {
+  margin-right: 3rem;
+}
+
+@keyframes swing {
+
+  0% {
+    transform: rotate(15deg);
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(15deg);
+  }
+
 }
