@@ -27,7 +27,7 @@ a {
   overflow: hidden;
 }
 
-.btn-ghost-2 {
+.btn-ghost-brew {
   border-style: solid;
   background-size: 200% 200%;
   background-image: linear-gradient(to top, #ff8f00 25%, #ffe082 25%, #ffe082 50%, #fff 50% );
@@ -36,7 +36,7 @@ a {
   transition: all 0.25s ease-in;
 }
 
-.btn-ghost-2:hover {
+.btn-ghost-brew:hover {
   border-color: var(--color-dark-primary);
   background-color: var(--color-white);
   background-image: linear-gradient(to top, #ff8f00 25%, #ffe082 25%, #ffe082 50%, #fff 50% );
