@@ -1,0 +1,39 @@
+.login-section {
+  background: url("../images/login-background-2.jpg");
+  background-repeat: no-repeat;
+  background-size: 120vw 110vh;
+  height: 100vh;
+  width: 100vw;
+}
+
+label {
+  background-color: gray;
+}
+
+.black {
+  background-color: #1e1e1e;
+}
+
+input {
+  border-color: #1e1e1e;
+}
+
+.sign-in {
+  color: var(--color-primary);
+}
+
+.btn {
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.btn-ghost {
+  background-color: transparent;
+  border-color: var(--color-primary);
+}
+
+.btn-ghost:hover {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-white);
+}
