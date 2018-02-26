@@ -676,23 +676,6 @@ button[disabled] {
   color: #000;
 }
 
-.btn-ghost-brew,
-.btn--ghost {
-  background-color: transparent;
-  border-color: #efbe44;
-  color: #000;
-}
-
-.btn-ghost-brew:focus,
-.btn-ghost-brew:hover,
-.btn--ghos-brewt:focus,
-.btn--ghos-brewt:hover {
-  background-color: #efbe44;
-  border-color: #efbe44;
-  color: #000;
-}
-
-
 .btn-ghost:focus,
 .btn-ghost:hover,
 .btn--ghost:focus,
