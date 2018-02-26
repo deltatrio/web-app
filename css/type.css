@@ -259,7 +259,7 @@ ol {
 input,
 option,
 select {
-  height: calc(1.3rem + .1625rem + .1625rem);
+  width: calc(16rem + .1625rem + .1625rem);
 }
 
 [type="color"] {
@@ -1239,6 +1239,7 @@ legend {
   option,
   select {
     height: calc(1.5rem + .1875rem + .1875rem);
+    color: red;
   }
 
   [type="color"] {

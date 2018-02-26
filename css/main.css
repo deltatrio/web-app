@@ -18,6 +18,10 @@ a {
   text-decoration: none;
 }
 
+.sign-in {
+  color: var(--color-primary);
+}
+
 .top-bar {
   background-color: var(--color-dark-grey);
   position: fixed;

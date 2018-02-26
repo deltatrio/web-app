@@ -563,6 +563,12 @@ svg.img-flex {
   transform: translate(-50%, -50%);
 }
 
+.pin-center-logo, .pin-c-logo {
+  left: 60%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+}
+
 .width-quarter, .w-1-4 {
   width: 25%;
 }
@@ -620,8 +626,8 @@ button,
   -moz-appearance: none;
   appearance: none;
   background-color: #333;
-  border-radius: 4px;
-  border: 3px solid #333;
+  border-radius: 0px;
+  border: 2px solid #333;
   color: #fff;
   font: inherit;
   text-decoration: none;
@@ -669,6 +675,23 @@ button[disabled] {
   border-color: #333;
   color: #000;
 }
+
+.btn-ghost-brew,
+.btn--ghost {
+  background-color: transparent;
+  border-color: #efbe44;
+  color: #000;
+}
+
+.btn-ghost-brew:focus,
+.btn-ghost-brew:hover,
+.btn--ghos-brewt:focus,
+.btn--ghos-brewt:hover {
+  background-color: #efbe44;
+  border-color: #efbe44;
+  color: #000;
+}
+
 
 .btn-ghost:focus,
 .btn-ghost:hover,
