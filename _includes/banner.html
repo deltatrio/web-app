@@ -1,0 +1,21 @@
+<section class="banner relative wrapper">
+  <div class="embed embed-16by9">
+    <img class="img-flex embed-item" src="{{site.baseurl}}/images/{{include.banner-img}}" alt="{{include.banner-alt}}">
+    <div class="banner-img embed-item absolute pin-center"></div>
+  </div>
+  <div class="banner-info">
+    <div class="banner-text absolute pin-bottom-left gutter-1-2">
+      <p class="banner-class push-0 tera">{{include.class}}</p>
+      <h1 class="banner-heading nina">{{include.heading}}</h1>
+    </div>
+    <div class="banner-likes absolute pin-top-right text-right pad-t gutter-1-2">
+      <i class="icon push-r i-32 thumbs-up">
+        <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#thumbs-up"></use></svg>
+      </i>
+      <i class="icon i-32 thumbs-down">
+        <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#thumbs-down"></use></svg>
+      </i>
+      <p class="pad-t-1-2">+{{include.likes}} likes</p>
+    </div>
+  </div>
+</section>

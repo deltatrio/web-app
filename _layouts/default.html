@@ -12,7 +12,7 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#212121">
   <meta name="msapplication-TileColor" content="#212121">
   <meta name="theme-color" content="#212121">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700" rel="stylesheet">
   <link href="{{site.baseurl}}/css/modules.css" rel="stylesheet">
   <link href="{{site.baseurl}}/css/grid.css" rel="stylesheet">
   <link href="{{site.baseurl}}/css/type.css" rel="stylesheet">
@@ -41,8 +41,8 @@
 
   <div class="top-bar pad-t-1-2 pad-b-1-2">
     <div class="wrapper gutter-1-2">
-      <a itemprop="url" class="micro push-r logo grid grid-middle w-1-2" href="{{site.baseurl}}/">
-        <i class="icon i-64 unit xs-1-2">
+      <a itemprop="url" class="micro push-r logo w-1-2" href="{{site.baseurl}}/">
+        <i class="icon i-64">
           <svg id="brewski-logo" width="89.2" height="128.2" viewBox="0 0 89.2 128.2">
             <style>
               .st0{fill:#ffe27d}.st1{fill:#ffc30d;stroke:#ffe27d;stroke-width:1.173;stroke-miterlimit:10}.st2{opacity:.75}.st3{fill:#fff}.st4{fill:#fbf4db;stroke:#ffe27e;stroke-width:1.193;stroke-miterlimit:10}.st5{fill:#303030}
@@ -65,13 +65,17 @@
           </svg>
         </i>
         {% if page.url == '/' %}
-          <h1 class="logo-text tera push-0 unit xs-1-2">Brewski</h1>
+          <h1 class="logo-text tera push-0 inline-block">Brewski</h1>
         {% else %}
-          <strong class="logo-text tera push-0 unit xs-1-2">Brewski</strong>
+          <strong class="logo-text tera push-0 inline-block">Brewski</strong>
         {% endif %}
       </a>
     </div>
   </div>
+
+  <main>
+    {{content}}
+  </main>
 
   <nav class="nav-bar grid grid-bottom pad-b-1-2">
     <div class="wrapper gutter-1-2 text-center">
@@ -101,5 +105,18 @@
       </div>
     </div>
   </nav>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script>
+    $('.thumbs-up').click(function() {
+      $('.thumbs-up').toggleClass("active");
+      $('.thumbs-down').removeClass("active");
+    });
+
+    $('.thumbs-down').click(function() {
+      $('.thumbs-down').toggleClass("active");
+      $('.thumbs-up').removeClass("active");
+    });
+  </script>
 </body>
 </html>
