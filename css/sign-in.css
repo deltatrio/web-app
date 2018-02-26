@@ -1,0 +1,17 @@
+html {
+  background: url("../images/login-background-2.jpg");
+  background-repeat: no-repeat;
+  background-size: 120vw 110vh;
+}
+
+label {
+  background-color: gray;
+}
+
+.black {
+  background-color: #1e1e1e;
+}
+
+input {
+  border-color: #1e1e1e;
+}
