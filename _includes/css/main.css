@@ -143,6 +143,73 @@ a {
   margin-right: 3rem;
 }
 
+/* For the brewing animation */
+.brew-section h1 {
+  color: var(--color-white);
+}
+
+svg#brewing {
+  cursor: pointer;
+  transition: all .25s linear;
+  transform: scale(1);
+}
+
+.brewing-scale-active {
+  transform: scale(1.08) !important;;
+  transform-origin: 35% 50% !important;;
+}
+
+.brew-section svg rect#rect-orange {
+  transition: all 1s linear;
+  transform: translate(87px, 379px);
+}
+
+.brewing-background-active {
+  transform: translate(87px, 185px) !important;
+  transition-delay: .5s !important;;
+}
+
+.brew-section svg rect#rect-white-2 {
+  transition: all 1s linear;
+  transform: translate(87px, 379px);
+}
+
+.brewing-background-2-active {
+  transform: translate(87px, 185px) !important;
+  transition-delay: .5s !important;
+}
+
+/* .brewing-scale {
+  cursor: pointer;
+  transition: all .25s linear;
+  transform: scale(1);
+}
+
+.brewing-scale-active {
+  transform: scale(1.08);
+  transform-origin: 35% 50%;
+}
+
+.brewing-background {
+  transition: all 1s linear;
+  transition-delay: .50s;
+  transform: translate(87px, 379px);
+}
+
+.brewing-background-active {
+  transform: translate(87px, 185px);
+}
+
+.brewing-background-2 {
+  transition: all 1s linear;
+  transition-delay: .50s;
+  transform: translate(87px, 379px);
+}
+
+.brewing-background-2-active {
+  transform: translate(87px, 185px);
+} */
+
 @keyframes swing {
 
   0% {

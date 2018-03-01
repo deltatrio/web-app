@@ -33,15 +33,36 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
   <script>
-    $('.thumbs-up').click(function() {
-      $('.thumbs-up').toggleClass("active");
-      $('.thumbs-down').removeClass("active");
+    $(".thumbs-up").click(function() {
+      $('.thumbs-up').toggleClass('active');
+      $('.thumbs-down').removeClass('active');
     });
 
-    $('.thumbs-down').click(function() {
-      $('.thumbs-down').toggleClass("active");
-      $('.thumbs-up').removeClass("active");
+    $(".thumbs-down").click(function() {
+      $('.thumbs-down').toggleClass('active');
+      $('.thumbs-up').removeClass('active');
     });
+  </script>
+
+  <script>
+    var brewing = $("svg.brewing > *");
+    var brew = $("#brewing");
+    var bgBeer = $("rect#rect-orange");
+    var beer = $("rect#rect-white-2");
+    var brewText = $("#brew-text");
+
+    brewing.on("click", function() {
+      brew.addClass('brewing-scale-active');
+      bgBeer.addClass('brewing-background-active');
+      beer.addClass('brewing-background-2-active');
+      brewText.text('Brewing…')
+    });
+  </script>
+
+  <script>
+    function delay (URL) {
+      setTimeout( function() { window.location = URL }, 2000 );
+    }
   </script>
 </body>
 </html>
