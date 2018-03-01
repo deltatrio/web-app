@@ -179,6 +179,26 @@ svg#brewing {
   transition-delay: .5s !important;
 }
 
+g.bubble-group-slow {
+  transition: all 4s linear;
+  transform: translateY(150px);
+}
+
+g.bubble-group-med {
+  transition: all 2.5s linear;
+  transform: translateY(150px);
+}
+
+g.bubble-group-fast {
+  transition: all 1.5s linear;
+  transform: translateY(150px);
+}
+
+.bubble-group-active {
+  transform: translateY(-100px) !important;
+  transition-delay: .5s !important;
+}
+
 /* .brewing-scale {
   cursor: pointer;
   transition: all .25s linear;

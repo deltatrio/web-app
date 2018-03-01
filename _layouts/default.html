@@ -50,12 +50,14 @@
     var bgBeer = $("rect#rect-orange");
     var beer = $("rect#rect-white-2");
     var brewText = $("#brew-text");
+    var bubble = $(".bubble-group");
 
     // Create the brewing animation
     brewing.on("click", function() {
       brew.addClass('brewing-scale-active');
       bgBeer.addClass('brewing-background-active');
       beer.addClass('brewing-background-2-active');
+      bubble.addClass('bubble-group-active');
       brewText.text('Brewing…')
     });
   </script>
@@ -65,7 +67,7 @@
     function delay (URL) {
       setTimeout( function() {
         window.location = URL
-      }, 2000 );
+      }, 2500 );
     }
   </script>
 </body>
