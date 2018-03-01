@@ -51,6 +51,7 @@
     var beer = $("rect#rect-white-2");
     var brewText = $("#brew-text");
 
+    // Create the brewing animation
     brewing.on("click", function() {
       brew.addClass('brewing-scale-active');
       bgBeer.addClass('brewing-background-active');
@@ -60,8 +61,11 @@
   </script>
 
   <script>
+    // Function to create the illusion of loading
     function delay (URL) {
-      setTimeout( function() { window.location = URL }, 2000 );
+      setTimeout( function() {
+        window.location = URL
+      }, 2000 );
     }
   </script>
 </body>
