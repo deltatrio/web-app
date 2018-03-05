@@ -199,6 +199,13 @@ caption {
   line-height: 2.925rem;
 }
 
+.beer-1 {
+  font-size: 1.6018rem;
+  line-height: 1.925rem;
+  letter-spacing: 1px;
+  color: #FFE082;
+}
+
 h1,
 .exa {
   font-size: 1.802rem;
