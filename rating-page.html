@@ -4,13 +4,12 @@ layout: navigation
 
 <nav class="grid tab">
   <div class="wrapper gutter-1-2 text-center">
-    <button class="tablinks active unit xs-1-2 s-1-2 m-1-2 l-1-2" onclick="openPage(event, 'Rated')" id="defaultOpen">Rated</button>
-    <button class="tablinks unit xs-1-2 s-1-2 m-1-2 l-1-2" onclick="openPage(event, 'Brewed')">Brewed</button>
+    <button class="tablinks pad-b-1-2 pad-t-1-2 w-1-2" onclick="openRated(event, 'rated')" id="defaultOpen">Brewed</button>
+    <button class="tablinks pad-b-1-2 pad-t-1-2 w-1-2" onclick="openRated(event, 'brewed')">Rated</button>
   </div>
 </nav>
 
-
-<div id="Rated" class="tabcontent grid wrapper gutter-1-4">
+<div id="rated" class="tabcontent grid wrapper gutter-1-4">
   <div class="unit-xs-1-2 s-1-2 m-1-2 l-1-2 img-flex relative island-1-8 gutter-1-4">
     <img src="http://via.placeholder.com/350x350">
     <p class="beer-1 bold absolute pin-bottom-left gutter">Punk<br>IPA</p>
@@ -41,7 +40,7 @@ layout: navigation
   </div>
 </div>
 
-  <div id="Brewed" class="tabcontent max-length">
+  <div id="brewed" class="tabcontent max-length">
     <ul class="push-0">
       <li class="grid">
         <i class="unit xs-1-4 s-1-4 m-1-4 l-1-4 icon i-72">
