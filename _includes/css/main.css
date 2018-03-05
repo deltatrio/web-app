@@ -90,6 +90,10 @@ a {
 
 /* For the beer profile page */
 
+.info-section {
+  background-color: var(--color-dark-grey);
+}
+
 .profile-heading {
   color: var(--color-light-primary);
   text-transform: uppercase;
@@ -220,6 +224,10 @@ h3 {
 /* For the brewing animation */
 .brew-section h1 {
   color: var(--color-white);
+}
+
+.brew-section {
+  background-color: var(--color-dark-grey);
 }
 
 svg#brewing {
