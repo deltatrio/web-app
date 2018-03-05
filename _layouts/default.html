@@ -26,7 +26,6 @@
   <meta name="twitter:url" content="{{site.baseurl}}/{{page.og-url}}">
   <meta name="twitter:description" content="{{page.meta}}">
   <meta name="twitter:image" content="{{site.baseurl}}/images/logo-og.jpg">
-</head>
 <body>
 
   {{content}}
@@ -70,5 +69,33 @@
       }, 2500 );
     }
   </script>
+
+
+  <script>
+  // Function to TABS
+  function openPage(event, pageName) {
+      var i, tabcontent, tablinks;
+
+
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+
+      document.getElementById(pageName).style.display = "block";
+      evt.currentTarget.className += " active";
+  }
+  </script>
+  <script>
+    document.getElementById("defaultOpen").click();
+  </script>
+
+
 </body>
 </html>

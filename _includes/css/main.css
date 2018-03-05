@@ -304,6 +304,55 @@ g.bubble-group-fast {
   transform: translate(87px, 185px);
 } */
 
+/* Tabs CSS */
+.tab {
+    overflow: hidden;
+    border: 1px solid #212121;
+    background-color: #212121;
+}
+
+.tab button {
+    background-color: #212121;
+    float: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    color: #FF8F00;
+    border: 2px solid #FF8F00;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.tab button.active {
+  color: #FF8F00;
+  border: 2px solid #FF8F00;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.tabcontent {
+    display: none;
+}
+
+.orange {
+  color: var(--color-primary);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Tabs CSS */
+
+
 @keyframes swing {
 
   0% {
