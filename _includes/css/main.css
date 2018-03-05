@@ -314,39 +314,30 @@ g.bubble-group-fast {
 
 /* Tabs CSS */
 .tab {
-    overflow: hidden;
-    border: 1px solid #212121;
-    background-color: #212121;
+  overflow: hidden;
+  background-color: var(--color-black);
 }
 
 .tab button {
-    background-color: #212121;
-    float: center;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
+  background-color: var(--color-black);
+  border: none;
+  float: center;
+  border-bottom: 2px solid var(--color-black);
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
 }
 
+.tab button.active,
 .tab button:hover {
-    color: #FF8F00;
-    border: 2px solid #FF8F00;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-}
-
-.tab button.active {
-  color: #FF8F00;
-  border: 2px solid #FF8F00;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  color: var(--color-dark-primary);
+  border-bottom: 2px solid var(--color-dark-primary);
 }
 
 .tabcontent {
-    display: none;
+  display: none;
+  animation: fading 1s linear;
 }
 
 .orange {
@@ -357,9 +348,6 @@ ul {
   list-style: none;
   padding: 0;
 }
-
-/* Tabs CSS */
-
 
 @keyframes swing {
 
