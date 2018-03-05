@@ -125,45 +125,51 @@ h3 {
 }
 
 .segmented-control {
-    display: table;
-    width: 50%;
-    margin: 2em 0;
-    padding: 0;
+  display: table;
+  width: 50%;
+  margin: 2em 0;
+  padding: 0;
 }
 
 .segmented-control-item {
-    display: table-cell;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .segmented-control-input {
-    position: absolute;
-    visibility: hidden;
+  position: absolute;
+  visibility: hidden;
 }
 
 .segmented-control-label {
-    display: block;
-    margin: 0 -1px -1px 0;
-    padding: 1em 3em;
-    color: white;
-    background-color: var(--color-dark-grey);
+  display: block;
+  margin: 0 -1px -1px 0;
+  padding: 1em 3em;
+  color: white;
+  background-color: var(--color-dark-grey);
 
-    border: 2px solid var(--color-light-primary);
+  border: 2px solid var(--color-light-primary);
 
-    text-align: center;
+  text-align: center;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .segmented-control-label:hover {
-    background: var(--color-primary);
+  background: var(--color-primary);
 }
 
 .segmented-control-input:checked + .segmented-control-label {
-    background: var(--color-light-primary);
-    color: var(--color-dark-grey);
+  background: var(--color-light-primary);
+  color: var(--color-dark-grey);
+}
+
+/* For the maps page */
+
+.i4ewOd-pzNkMb-haAclf {
+  background-color: var(--color-primary) !important;;
 }
 
 /* For the beer page banner */
