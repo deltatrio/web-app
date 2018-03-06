@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<div class="login-section">
+  <div class="pin-tc max-length text-center">
+    <div class="wrapper gutter-1-2 pad-t-2">
+      <a itemprop="url" class="grid-middle" href="{{site.baseurl}}/">
+        <i class="icon i-96 unit xs-1-2">
+          <svg id="brewski-logo" width="89.2" height="128.2" viewBox="0 0 89.2 128.2">
+            <style>
+            .st0{fill:#ffe27d}.st1{fill:#ffc30d;stroke:#ffe27d;stroke-width:1.173;stroke-miterlimit:10}.st2{opacity:.75}.st3{fill:#fff}.st4{fill:#fbf4db;stroke:#ffe27e;stroke-width:1.193;stroke-miterlimit:10}.st5{fill:#303030}
+            </style>
+            <g id="handle" transform="translate(26.317 51.799)">
+              <path id="Path_9" d="M50.3 62H13.1C6 62 .6 54.9.6 46.1V16.5C.6 7.7 6 .6 13.1.6h37.2c7.1 0 12.5 7.1 12.5 15.9v29.7c0 8.7-5.4 15.8-12.5 15.8zM13.1 6c-4.6 0-7.9 4.6-7.9 10v29.7c0 5.4 3.8 10 7.9 10h37.2c4.6 0 7.9-4.6 7.9-10V16.1c0-5.4-3.8-10-7.9-10L13.1 6z" class="st0"/>
+            </g>
+            <path id="beer" d="M61.2 42.8H16.9c-3.4.1-6.2 2.8-6.3 6.3v72.3c.1 3.4 2.8 6.2 6.3 6.3h44.3c3.4-.1 6.2-2.8 6.3-6.3V49.1c.4-3.8-2.6-6.3-6.3-6.3z" class="st1"/>
+            <g id="stripe-right" class="st2" transform="translate(43.444 62.242)">
+              <path id="Path_11" d="M6.9 45.3H3.5c-1.6 0-2.9-1.2-2.9-2.8v-39C.6 1.9 1.8.6 3.4.6h3.4c1.6 0 2.9 1.2 2.9 2.8v38.9c0 1.6-1.3 2.9-2.8 3z" class="st3"/>
+            </g>
+            <g id="stripe-left" class="st2" transform="translate(25.482 62.242)">
+              <path id="Path_12" d="M6.9 45.3H3.5c-1.6 0-2.9-1.2-2.9-2.8v-39C.6 1.9 1.8.6 3.4.6h3.4c1.6 0 2.9 1.2 2.9 2.8v38.9c0 1.6-1.3 2.9-2.8 3z" class="st3"/>
+            </g>
+            <path id="bubbles" d="M62.8 22.7c-1.3-.1-2.5.1-3.8.4C57.8 11.6 47.5 3.2 36 4.4c-9 1-16.4 7.7-18.3 16.7C8 21.6.4 29.7.6 39.4.7 49.6 8.9 57.7 19 57.8c7.4.1 14-4.4 16.7-11.3h2.5c2.9.1 5.7-.5 8.4-1.7 2.2 7.4 9 12.5 16.7 12.5 9.4.1 17-7.4 17.1-16.8v-.4C80 30.3 72 22.7 62.8 22.7z" class="st4"/>
+            <path id="moustache" d="M61.6 112.5c-.9-.4-1.8-1-2.5-1.7-.8-.8-1.3-1.7-2.1-2.1-2-3-3.8-6-5.4-9.2-.6-.9-1.3-1.8-2.1-2.5-1.4-1.4-3.5-2-5.5-1.6-1.5 0-3 .4-4.2 1.3-1.2-.8-2.7-1.3-4.2-1.3-1.9-.1-3.9.5-5.4 1.7-.8.7-1.5 1.6-2.1 2.5-2 3-3.8 6-5.4 9.2-.5.9-1.2 1.6-2.1 2.1-.7.7-1.6 1.3-2.5 1.7-1.3.4-1.3 2.1.4 2.1 3.2 0 6.3-.8 9.2-2.1 4.6-1.8 8.8-4.7 12.1-8.4 3.4 3.6 7.6 6.4 12.1 8.4 2.9 1.3 6 2 9.2 2.1.6.1 1.1-.4 1.2-1 .1-.5-.2-1-.7-1.2z" class="st5"/>
+            <circle id="eye-right" cx="45.7" cy="84.6" r="3.8" class="st5"/>
+            <circle id="eye-left" cx="33.6" cy="84.6" r="3.8" class="st5"/>
+            <circle id="bubble" cx="71.2" cy="7.7" r="7.1" class="st4"/>
+          </svg>
+        </i>
+      </a>
+    </div>
+    <h1 class="logo-text peta push-0 unit xs-1-2">Brewski</h1>
+  </div>
+  <div class="island-2 pad-t-2 pin-c">
+      <form method="POST" action="/authenticate">
+      <div class="island-1-4">
+        <input type="text" class="sign-in black" value="Username" onfocus="this.value = this.value=='Username'?'':this.value;" onblur="this.value = this.value==''?'Username':this.value;">
+      </div>
+      <div class="island-1-4">
+        <input type="text" class="sign-in black" value="Password" onfocus="this.value = this.value=='Password'?'':this.value;" onblur="this.value = this.value==''?'Password':this.value;">
+      </div>
+      <div class="island-1-4">
+        <button href="#" class="btn btn-ghost sign-in milli" type="submit">Sign In</button>
+      </div>
+    </form>
+  </div>
+</div>
