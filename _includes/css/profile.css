@@ -1,0 +1,109 @@
+/* For the beer profile page */
+
+.info-section {
+  background-color: var(--color-dark-grey);
+}
+
+.profile-heading {
+  color: var(--color-light-primary);
+  text-transform: uppercase;
+}
+
+.banner-edit {
+  color: var(--color-white);
+}
+
+.banner-edit svg {
+  cursor: pointer;
+  fill: var(--color-white);
+}
+
+.banner-edit svg:hover {
+  fill: var(--color-light-primary);
+}
+
+.banner-profile {
+  background: linear-gradient(rgba(20,20,20, .50), rgba(20,20,20, .75));
+}
+
+.profile-pic {
+  border: var(--color-light-primary) solid 10px;
+}
+
+h3 {
+  color: var(--color-light-primary);
+}
+
+/* Local or commercial control */
+
+.segmented-control {
+  display: table;
+  width: 25%;
+  padding: 0;
+}
+
+.segmented-control-item {
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.segmented-control-input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.segmented-control-label {
+  display: block;
+  color: white;
+  background-color: var(--color-dark-grey);
+  border: 2px solid var(--color-light-primary);
+  text-align: center;
+  cursor: pointer;
+}
+
+.segmented-control-label:hover {
+  background: var(--color-primary);
+}
+
+.segmented-control-input:checked + .segmented-control-label {
+  background: var(--color-light-primary);
+  color: var(--color-dark-grey);
+}
+
+@media only screen and (min-width: 15em) {
+
+  .profile-pic {
+    width: 11rem;
+  }
+
+  .profile-heading {
+    font-size: 160%;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .profile-pic {
+    width: 13rem;
+  }
+
+  .profile-heading {
+    font-size: 250%;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .profile-pic {
+    width: 15rem;
+  }
+
+  .profile-heading {
+    font-size: 300%;
+  }
+
+}

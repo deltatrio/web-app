@@ -1,7 +1,8 @@
 ---
 layout: navigation
+title: James Black Profile
 meta: Update your profile page preferences to let Brewski find your new favourites.
-og-url: https://deltatrio.github.io/profile/
+og-url: profile
 
 skip-link-1:
 skip-link-2:
@@ -15,29 +16,29 @@ skip-link-title-2:
     <div class="banner-profile embed-item absolute pin-bottom-center"></div>
   </div>
   <div class="banner-info">
-    <div class="absolute pin-bottom-left gutter-1-2">
-      <img class="img-flex profile-pic" src="{{site.baseurl}}/images/profile-picture.jpg">
+    <div class="absolute pin-bottom-left island-1-2">
+      <img itemprop="image" class="img-flex profile-pic" src="{{site.baseurl}}/images/profile-picture.jpg">
     </div>
     <div class="banner-text absolute pin-bottom-right gutter-1-2">
-      <h1 class="profile-heading nina">James Black</h1>
+      <h1 class="profile-heading nina push-0">James Black</h1>
     </div>
     <div class="banner-edit absolute pin-top-right text-right pad-t gutter-1-2">
-      <i class="icon i-32">
+      <i class="icon i-24">
         <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#edit"></use></svg>
       </i>
-      <p class="pad-t-1-2">edit</p>
     </div>
   </div>
 </section>
 
 <section class="wrapper gutter-1-2 pad-t info-section push-2 pad-b-2">
-  <div>
-    <p class="tag island-1-4 push-r-1-2 inline-block">Spiky</p>
-    <p class="tag island-1-4 push-r-1-2 inline-block">Pine</p>
-    <p class="tag island-1-4 push-r-1-2 inline-block">Tropical</p>
-    <p class="tag island-1-4 inline-block">Hoppy</p>
-  </div>
-  <div class="info-icons">
+  <ul class="list">
+    <li class="tag island-1-4 push-r-1-2 inline-block">Spiky</li>
+    <li class="tag island-1-4 push-r-1-2 inline-block">Pine</li>
+    <li class="tag island-1-4 push-r-1-2 inline-block">Tropical</li>
+    <li class="tag island-1-4 inline-block">Hoppy</li>
+  </ul>
+
+  <div class="info-icons push-2">
     <div class="inline-block percent text-center">
       <i class="icon i-48">
         <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#percent"></use></svg>
@@ -62,27 +63,29 @@ skip-link-title-2:
       </i>
       <p class="text-center pad-t-1-4">Cascade</p>
     </div>
-    <div class="push-2">
-      <h3 class="push-1-4">Top 5 Favourites</h3>
-      <ol class="gutter">
-        <li class="push-1-4">Harpoon IPA</li>
-        <li class="push-1-4">Goose Island IPA</li>
-        <li class="push-1-4">Sierra Nevada Stout Stone IPA</li>
-        <li class="push-1-4">Dogfish Head</li>
-        <li class="push-1-4">90 Minute IPA</li>
-      </ol>
-    </div>
   </div>
+
   <div class="push-2">
     <ul class="segmented-control push-2">
       <li class="segmented-control-item">
         <input class="segmented-control-input" type="radio" value="1" name="option" id="option-1" checked>
-        <label class="segmented-control-label" for="option-1">Local</label>
+        <label class="segmented-control-label gutter-1-2 pad-t-1-4 pad-b-1-4" for="option-1">Local</label>
       </li>
       <li class="segmented-control-item">
         <input class="segmented-control-input" type="radio" value="2" name="option" id="option-2" >
-        <label class="segmented-control-label" for="option-2">Commercial</label>
+        <label class="segmented-control-label gutter-1-2 pad-t-1-4 pad-b-1-4" for="option-2">Commercial</label>
       </li>
     </ul>
+  </div>
+
+  <div class="push-2 info-icons">
+    <h3 class="push-1-4">Top 5 Favourites</h3>
+    <ol class="gutter-1-2">
+      <li class="push-1-4">Harpoon IPA</li>
+      <li class="push-1-4">Goose Island IPA</li>
+      <li class="push-1-4">Sierra Nevada Stout Stone IPA</li>
+      <li class="push-1-4">Dogfish Head</li>
+      <li class="push-1-4">90 Minute IPA</li>
+    </ol>
   </div>
 </section>
