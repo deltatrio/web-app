@@ -1,6 +1,6 @@
 <section class="banner relative wrapper">
   <div class="embed embed-16by9">
-    <img class="img-flex embed-item" src="{{site.baseurl}}/images/{{include.banner-img}}" alt="{{include.banner-alt}}">
+    <img itemprop="image" class="img-flex embed-item" src="{{site.baseurl}}/images/{{include.banner-img}}" alt="{{include.banner-alt}}">
     <div class="banner-img embed-item absolute pin-center"></div>
   </div>
   <div class="banner-info">
@@ -15,7 +15,7 @@
       <i class="icon i-32 thumbs-down">
         <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#thumbs-down"></use></svg>
       </i>
-      <p class="pad-t-1-2">+{{include.likes}} likes</p>
+      <p class="pad-t-1-2">+<span id="likes">{{include.likes}}</span> likes</p>
     </div>
   </div>
 </section>

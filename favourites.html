@@ -1,0 +1,164 @@
+---
+layout: navigation
+title: Recent Brews
+meta: All the brews you've tried and loved with Brewski.
+og-url: recent
+---
+
+<nav class="grid tab">
+  <div class="wrapper gutter-1-2 text-center">
+    <button class="tablinks pad-b-1-2 pad-t-1-2 w-1-2 text-upper" onclick="openRated(event, 'rated')" id="defaultOpen">Favorites</button>
+    <button class="tablinks pad-b-1-2 pad-t-1-2 w-1-2 text-upper" onclick="openRated(event, 'brewed')">Brewed</button>
+  </div>
+</nav>
+
+<div id="rated" class="tabcontent grid wrapper gutter-1-4 pad-b-2 push-2">
+  <div class="unit xs-1 s-1-2 m-1-2 l-1-2 img-flex relative island-1-8 gutter-1-4">
+    <a itemprop="url" class="" href="{{site.baseurl}}/punk-ipa">
+      <img itemprop="image" src="http://via.placeholder.com/350x350">
+      <div class="bold absolute pin-bottom-left gutter">
+        <h2 class="zetta push-0">Punk IPA</h2>
+        <h3 class="not-bold">Blonde Ale</h3>
+      </div>
+      <i class="absolute pin-top-right icon i-64">
+        <svg class="island-1-2 orange"><use xlink:href="{{site.baseurl}}/images/icons.svg#thumbs-up"></use></svg>
+      </i>
+    </a>
+  </div>
+  <div class="unit xs-1 s-1-2 m-1-2 l-1-2 img-flex relative island-1-8 gutter-1-4">
+    <a itemprop="url" class="" href="{{site.baseurl}}/punk-ipa">
+      <img itemprop="image" src="http://via.placeholder.com/350x350">
+      <div class="bold absolute pin-bottom-left gutter">
+        <h2 class="zetta push-0">Cause & Effect</h2>
+        <h3 class="not-bold">Blonde Ale</h3>
+      </div>
+      <i class="absolute pin-top-right icon i-64">
+        <svg class="island-1-2 orange"><use xlink:href="{{site.baseurl}}/images/icons.svg#thumbs-up"></use></svg>
+      </i>
+    </a>
+  </div>
+  <div class="unit xs-1 s-1-2 m-1-2 l-1-2 img-flex relative island-1-8 gutter-1-4">
+    <a itemprop="url" class="" href="{{site.baseurl}}/punk-ipa">
+      <img itemprop="image" src="http://via.placeholder.com/350x350">
+      <div class="bold absolute pin-bottom-left gutter">
+        <h2 class="zetta push-0">Detour</h2>
+        <h3 class="not-bold">Golden</h3>
+      </div>
+      <i class="absolute pin-top-right icon i-64">
+        <svg class="island-1-2 orange"><use xlink:href="{{site.baseurl}}/images/icons.svg#thumbs-up"></use></svg>
+      </i>
+    </a>
+  </div>
+  <div class="unit xs-1 s-1-2 m-1-2 l-1-2 img-flex relative island-1-8 gutter-1-4">
+    <a itemprop="url" class="" href="{{site.baseurl}}/punk-ipa">
+      <img itemprop="image" src="http://via.placeholder.com/350x350">
+      <div class="bold absolute pin-bottom-left gutter">
+        <h2 class="zetta push-0">Lone Pine</h2>
+        <h3 class="not-bold">India Pale Ale</h3>
+      </div>
+      <i class="absolute pin-top-right icon i-64">
+        <svg class="island-1-2 orange"><use xlink:href="{{site.baseurl}}/images/icons.svg#thumbs-up"></use></svg>
+      </i>
+    </a>
+  </div>
+</div>
+
+<div id="brewed" class="tabcontent max-length gutter-1-2 push-2 pad-b-2">
+  <ul class="push-0">
+    <li class="grid grid-middle">
+      <a itemprop="url" class="island-1-2 w-1" href="{{site.baseurl}}/punk-ipa">
+        <div class="unit xs-1-3">
+          <img itemprop="image" class="img-flex beer-img" src="{{site.baseurl}}/images/placeholder-circle.svg" alt="">
+        </div>
+        <div class="unit xs-1-3">
+          <h3 class="not-bold push-0 mega">Punk IPA</h3>
+        </div>
+        <div class="unit xs-1-3 text-right">
+          <i class="icon i-48 text-right">
+            <svg class="island-1-2 orange"><use xlink:href="{{site.baseurl}}/images/icons.svg#thumbs-up"></use></svg>
+          </i>
+        </div>
+      </a>
+    </li>
+
+    <li class="grid grid-middle">
+      <a itemprop="url" class="island-1-2 w-1" href="{{site.baseurl}}/punk-ipa">
+        <div class="unit xs-1-3">
+          <img itemprop="image" class="img-flex beer-img" src="{{site.baseurl}}/images/placeholder-circle.svg" alt="">
+        </div>
+        <div class="unit xs-1-3">
+          <h3 class="not-bold push-0 mega">Cause & Effect</h3>
+        </div>
+        <div class="unit xs-1-3 text-right">
+          <i class="icon i-48 text-right">
+            <svg class="island-1-2 orange"><use xlink:href="{{site.baseurl}}/images/icons.svg#thumbs-up"></use></svg>
+          </i>
+        </div>
+      </a>
+    </li>
+
+    <li class="grid grid-middle">
+      <a itemprop="url" class="island-1-2 w-1" href="{{site.baseurl}}/punk-ipa">
+        <div class="unit xs-1-3">
+          <img itemprop="image" class="img-flex beer-img" src="{{site.baseurl}}/images/placeholder-circle.svg" alt="">
+        </div>
+        <div class="unit xs-1-3">
+          <h3 class="not-bold push-0 mega">Detour</h3>
+        </div>
+        <div class="unit xs-1-3 text-right">
+          <i class="icon i-48 text-right">
+            <svg class="island-1-2 orange"><use xlink:href="{{site.baseurl}}/images/icons.svg#thumbs-up"></use></svg>
+          </i>
+        </div>
+      </a>
+    </li>
+
+    <li class="grid grid-middle">
+      <a itemprop="url" class="island-1-2 w-1" href="{{site.baseurl}}/punk-ipa">
+        <div class="unit xs-1-3">
+          <img itemprop="image" class="img-flex beer-img" src="{{site.baseurl}}/images/placeholder-circle.svg" alt="">
+        </div>
+        <div class="unit xs-1-3">
+          <h3 class="not-bold push-0 mega">Inukshuk</h3>
+        </div>
+        <div class="unit xs-1-3 text-right">
+          <i class="icon i-48 text-right">
+            <svg class="island-1-2"><use xlink:href="{{site.baseurl}}/images/icons.svg#thumbs"></use></svg>
+          </i>
+        </div>
+      </a>
+    </li>
+
+    <li class="grid grid-middle">
+      <a itemprop="url" class="island-1-2 w-1" href="{{site.baseurl}}/punk-ipa">
+        <div class="unit xs-1-3">
+          <img itemprop="image" class="img-flex beer-img" src="{{site.baseurl}}/images/placeholder-circle.svg" alt="">
+        </div>
+        <div class="unit xs-1-3">
+          <h3 class="not-bold push-0 mega">Lone Pine</h3>
+        </div>
+        <div class="unit xs-1-3 text-right">
+          <i class="icon i-48 text-right">
+            <svg class="island-1-2 orange"><use xlink:href="{{site.baseurl}}/images/icons.svg#thumbs-up"></use></svg>
+          </i>
+        </div>
+      </a>
+    </li>
+
+    <li class="grid grid-middle">
+      <a itemprop="url" class="island-1-2 w-1" href="{{site.baseurl}}/punk-ipa">
+        <div class="unit xs-1-3">
+          <img itemprop="image" class="img-flex beer-img" src="{{site.baseurl}}/images/placeholder-circle.svg" alt="">
+        </div>
+        <div class="unit xs-1-3">
+          <h3 class="not-bold push-0 mega">Blue Moon</h3>
+        </div>
+        <div class="unit xs-1-3 text-right">
+          <i class="icon i-48 text-right">
+            <svg class="island-1-2"><use xlink:href="{{site.baseurl}}/images/icons.svg#thumbs"></use></svg>
+          </i>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>

@@ -38,8 +38,7 @@ h3 {
 
 .segmented-control {
   display: table;
-  width: 50%;
-  margin: 2em 0;
+  width: 25%;
   padding: 0;
 }
 
@@ -57,15 +56,10 @@ h3 {
 
 .segmented-control-label {
   display: block;
-  margin: 0 -1px -1px 0;
-  padding: 1em 3em;
   color: white;
   background-color: var(--color-dark-grey);
-
   border: 2px solid var(--color-light-primary);
-
   text-align: center;
-
   cursor: pointer;
 }
 

@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Log-in
 meta: Login to Brewski to find the perfect beer!
 ---
 
@@ -7,7 +8,7 @@ meta: Login to Brewski to find the perfect beer!
   <div class="text-center pad-b-2">
     <div class="wrapper gutter-1-2 pad-t-2 pad-b-1-2">
       <a itemprop="url" href="{{site.baseurl}}/">
-        <i class="icon i-96">
+        <i itemprop="logo" class="icon i-96">
           <svg id="brewski-logo" width="89.2" height="128.2" viewBox="0 0 89.2 128.2">
             <style>
             .st0{fill:#ffe27d}.st1{fill:#ffc30d;stroke:#ffe27d;stroke-width:1.173;stroke-miterlimit:10}.st2{opacity:.75}.st3{fill:#fff}.st4{fill:#fbf4db;stroke:#ffe27e;stroke-width:1.193;stroke-miterlimit:10}.st5{fill:#303030}
@@ -35,10 +36,10 @@ meta: Login to Brewski to find the perfect beer!
   </div>
   <div class="pad-t-2 text-center">
     <div class="island-1-4">
-      <input type="text" value="Username" onfocus="this.value = this.value=='Username'?'':this.value;" onblur="this.value = this.value==''?'Username':this.value;">
+      <input type="text" value="jamesblack" onfocus="this.value = this.value=='Username'?'':this.value;" onblur="this.value = this.value==''?'Username':this.value;">
     </div>
     <div class="island-1-4">
-      <input type="password" value="Password" onfocus="this.value = this.value=='Password'?'':this.value;" onblur="this.value = this.value==''?'Password':this.value;">
+      <input type="password" value="password" onfocus="this.value = this.value=='Password'?'':this.value;" onblur="this.value = this.value==''?'Password':this.value;">
     </div>
     <div class="island-1-4">
       <a href="{{site.baseurl}}/brew" class="btn btn-ghost signin milli" type="submit">Sign In</a>

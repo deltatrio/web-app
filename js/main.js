@@ -1,12 +1,21 @@
 // Create the illusion of a function like and dislike
+// var likes = $("#likes").text();
+// var iNum = parseInt(likes);
+
 $(".thumbs-up").click(function() {
   $('.thumbs-up').toggleClass('active');
   $('.thumbs-down').removeClass('active');
+
+  // iNum++;
+  // $('#likes').text(iNum);
 });
 
 $(".thumbs-down").click(function() {
   $('.thumbs-down').toggleClass('active');
   $('.thumbs-up').removeClass('active');
+
+  // iNum--;
+  // $('#likes').text(iNum);
 });
 
 var brewing = $("svg.brewing > *");
@@ -38,12 +47,12 @@ function openRated(evt, ratedName) {
 
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
+    tabcontent[i].style.display = "none";
   }
 
   tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
 
   document.getElementById(ratedName).style.display = "block";

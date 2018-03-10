@@ -10,6 +10,14 @@
   --font-primary: 'Raleway', sans-serif;
 }
 
+.yellow {
+  color: var(--color-light-primary);
+}
+
+.orange {
+  color: var(--color-dark-primary);
+}
+
 html {
   background-color: var(--color-dark-grey);
   font-family: var(--font-primary);
@@ -17,4 +25,29 @@ html {
 
 a {
   text-decoration: none;
+}
+
+.tabcontent a {
+  color: var(--color-light-primary);
+}
+
+.tabcontent a:hover,
+.tabcontent a:focus {
+  color: var(--color-dark-primary);
+}
+
+.beer-img {
+  width: 5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#brewed a {
+  border-bottom: 2px solid var(--color-black);
+  color: var(--color-light-primary);
+  transition: all .25s linear;
+}
+
+#brewed a:hover {
+  background-color: var(--color-black);
 }

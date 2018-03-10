@@ -2,7 +2,7 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>{% if page.meta %}{{page.meta}} · {% endif %}Brewski</title>
+  <title>{% if page.title %}{{page.title}} · {% endif %}Brewski</title>
   <meta name="description" content="{{page.meta}}">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="apple-touch-icon" sizes="180x180" href="{{site.baseurl}}/apple-touch-icon.png">
@@ -39,7 +39,9 @@
     {% endif %}
   </ul>
 
-  {{content}}
+  <main itemscope itemtype="https://schema.org/Corporation">
+    {{content}}
+  </main>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
   <script src="{{site.baseurl}}/js/main.js"></script>
