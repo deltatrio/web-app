@@ -1,0 +1,148 @@
+/* For page navigations (top navigation) */
+
+.top-bar {
+  background-color: var(--color-black);
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-bar {
+  background-color: var(--color-black);
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.logo:hover svg path#moustache {
+  animation: swing 800ms ease-in-out forwards infinite;
+  transform-origin: 50% 75%;
+}
+
+.logo-text {
+  color: var(--color-white);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Dropdown */
+.profile {
+  background-color: transparent;
+  color: var(--color-light-grey);
+  border: none;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: var(--color-white);
+  width: 16rem;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+}
+
+.signout {
+  color: var(--color-light-grey);
+}
+
+.signout:hover {
+  color: var(--color-black);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  top: -5;
+  right: 0;
+}
+
+.dropdown:hover .profile {
+  background-color: transparent;
+  color: var(--color-white);
+}
+
+.nav-profile-pic {
+  border-radius: 10rem;
+}
+
+/* For page navigations (bottom navigation) */
+
+.nav-bar svg,
+.nav-bar a {
+  color: var(--color-white);
+  fill: var(--color-white);
+}
+
+.nav-bar a:hover svg,
+.nav-bar a:hover {
+  color: var(--color-dark-primary);
+  fill: var(--color-dark-primary);
+}
+
+.current,
+.current svg {
+  color: var(--color-dark-primary) !important;
+  fill: var(--color-dark-primary) !important;
+}
+
+/* For page navigations (buttons) */
+
+/* Brewing button with transition */
+
+.btn {
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.btn-ghost-brew {
+  border-style: solid;
+  background-size: 200% 200%;
+  background-image: linear-gradient(to top, #ff8f00 25%, #ffe082 25%, #ffe082 50%, #fff 50% );
+  border-color: var(--color-dark-primary);
+  color: var(--color-dark-primary);
+  transition: all 0.25s ease-in;
+}
+
+.btn-ghost-brew:hover {
+  border-color: var(--color-dark-primary);
+  background-color: var(--color-white);
+  background-image: linear-gradient(to top, #ff8f00 25%, #ffe082 25%, #ffe082 50%, #fff 50% );
+  background-position: 0 100%;
+  color: var(--color-white);
+}
+
+/* Simple ghost button */
+
+.btn {
+  border-radius: 0;
+  overflow: hidden;
+  transition: all 0.25s ease-in;
+}
+
+.btn-ghost {
+  background-color: transparent;
+  border-color: var(--color-primary);
+  color:  var(--color-primary);
+}
+
+.btn-ghost:hover {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+@keyframes swing {
+
+  0% {
+    transform: rotate(15deg);
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(15deg);
+  }
+
+}
