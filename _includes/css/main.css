@@ -37,9 +37,10 @@ a {
 }
 
 .beer-img {
-  width: 5rem;
+  border-radius: 25rem;
   margin-right: auto;
   margin-left: auto;
+  width: 5rem;
 }
 
 #brewed a {
@@ -50,4 +51,14 @@ a {
 
 #brewed a:hover {
   background-color: var(--color-black);
+}
+
+.fav-img {
+  overflow: hidden;
+}
+
+.fav-beer-overlay {
+  background: linear-gradient(rgba(20,20,20, .50), rgba(20,20,20, .75));
+  height: 98.75%;
+  width: 97%;
 }
