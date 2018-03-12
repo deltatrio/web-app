@@ -13,7 +13,8 @@
   width: 100%;
 }
 
-.logo:hover svg path#moustache {
+.logo:hover svg path#moustache,
+.logo:focus svg path#moustache, {
   animation: swing 800ms ease-in-out forwards infinite;
   transform-origin: 50% 75%;
 }
@@ -46,17 +47,20 @@
   color: var(--color-light-grey);
 }
 
-.signout:hover {
+.signout:hover,
+.signout:focus, {
   color: var(--color-black);
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content,
+.dropdown:focus .dropdown-content {
   display: block;
   top: -5;
   right: 0;
 }
 
-.dropdown:hover .profile {
+.dropdown:hover .profile,
+.dropdown:focus .profile {
   background-color: transparent;
   color: var(--color-white);
 }
@@ -74,7 +78,9 @@
 }
 
 .nav-bar a:hover svg,
-.nav-bar a:hover {
+.nav-bar a:hover,
+.nav-bar a:focus svg,
+.nav-bar a:focus {
   color: var(--color-dark-primary);
   fill: var(--color-dark-primary);
 }
@@ -103,7 +109,8 @@
   transition: all 0.25s ease-in;
 }
 
-.btn-ghost-brew:hover {
+.btn-ghost-brew:hover,
+.btn-ghost-brew:focus {
   border-color: var(--color-dark-primary);
   background-color: var(--color-white);
   background-image: linear-gradient(to top, #ff8f00 25%, #ffe082 25%, #ffe082 50%, #fff 50% );
@@ -125,7 +132,8 @@
   color:  var(--color-primary);
 }
 
-.btn-ghost:hover {
+.btn-ghost:hover,
+.btn-ghost:focus {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
   color: var(--color-white);

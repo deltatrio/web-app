@@ -49,7 +49,8 @@ a {
   transition: all .25s linear;
 }
 
-#brewed a:hover {
+#brewed a:hover,
+#brewed a:focus {
   background-color: var(--color-black);
 }
 

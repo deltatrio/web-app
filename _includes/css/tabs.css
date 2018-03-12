@@ -16,7 +16,8 @@
 }
 
 .tab button.active,
-.tab button:hover {
+.tab button:hover,
+.tab button:focus {
   color: var(--color-dark-primary);
   border-bottom: 2px solid var(--color-dark-primary);
 }
